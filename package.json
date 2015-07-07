@@ -7,6 +7,9 @@
     "url": "https://github.com/nathanfaucett/is_array.git"
   },
   "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
   "keywords": [
     "is_array",
     "is_array.js"
@@ -21,7 +24,8 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "is_length": "git://github.com/nathanfaucett/is_length",
-    "is_object_like": "git://github.com/nathanfaucett/is_object_like"
+    "is_length": "git://github.com/nathanfaucett/is_length.git",
+    "is_native": "git://github.com/nathanfaucett/is_native.git",
+    "is_object_like": "git://github.com/nathanfaucett/is_object_like.git"
   }
 }
