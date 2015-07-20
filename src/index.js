@@ -1,6 +1,6 @@
 var isNative = require("is_native"),
     isLength = require("is_length"),
-    isObjectLike = require("is_object_like");
+    isObject = require("is_object");
 
 
 var objectToString = Object.prototype.toString,
@@ -13,11 +13,12 @@ if (isNative(nativeIsArray)) {
 } else {
     isArray = function isArray(value) {
         return (
-            isObjectLike(value) &&
+            isObject(value) &&
             isLength(value.length) &&
             objectToString.call(value) === "[object Array]"
         ) || false;
     };
 }
+
 
 module.exports = isArray;
