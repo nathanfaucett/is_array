@@ -1,6 +1,6 @@
-var isNative = require("is_native"),
-    isLength = require("is_length"),
-    isObject = require("is_object");
+var isNative = require("@nathanfaucett/is_native"),
+    isLength = require("@nathanfaucett/is_length"),
+    isObject = require("@nathanfaucett/is_object");
 
 
 var objectToString = Object.prototype.toString,
